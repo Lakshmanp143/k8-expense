@@ -40,7 +40,7 @@ spec:
     app: frontend
     tier: web
   ports:
-  - protocol: TCL
+  - protocol: TCP
     port: 80
     targetPort: 8080
     nodePort: 30008

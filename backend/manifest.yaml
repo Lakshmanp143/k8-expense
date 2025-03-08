@@ -10,9 +10,10 @@ metadata:
 spec: 
   replicas: 1
   selector:
-    project: expense
-    app: backend
-    tier: backend
+    matchLabels:
+      project: expense
+      app: backend
+      tier: backend
   template:
     metadata: 
     labels: 
@@ -38,4 +39,4 @@ spec:
   - protocol: TCP
     port: 8080
     targetPort: 8080
-    
+
